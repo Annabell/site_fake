@@ -1,0 +1,7 @@
+<div class="card mb-20">
+  <div class="card-header flex">
+    <h5 class="mb-0 flex-1">Listando Relatórios</h5>
+    <span class="text-sm"><%= link "Novo Relatório", to: Routes.post_path(@conn, :new), class: "text-white hover:text-gray-200" %></span>
+  </div>
+  <%= live_render @conn, PhxTesteWeb.PostListLive %>
+</div>

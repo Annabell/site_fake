@@ -1,0 +1,18 @@
+<h1>Mostrando Relatório de ???</h1>
+
+<ul>
+
+  <li>
+    <strong>Titulo:</strong>
+    <%= @post.title %>
+  </li>
+
+  <li>
+    <strong>Descrição:</strong>
+    <%= @post.body %>
+  </li>
+
+</ul>
+
+<span><%= link "Editar", to: Routes.post_path(@conn, :edit, @post) %></span> |
+<span><%= link "Voltar", to: Routes.post_path(@conn, :index) %></span>

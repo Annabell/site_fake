@@ -1,0 +1,47 @@
+<section class="phx-hero" "alert-#{@color": @color}>
+<h1>Listando os Relatórios Disponíveis</h1>
+
+<table class="card-body table">
+  <thead>
+    <tr>
+      <th>Título</th>
+      <th>Descrição</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for post <- @posts do %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.body %></td>
+
+      <td class="w-1/12 whitespace-no-wrap">
+        <span><%= link "Show", to: Routes.post_path(@conn, :show, post) %></span>
+        <span><%= link "Edit", to: Routes.post_path(@conn, :edit, post) %></span>
+        <span><%= link "Delete", to: Routes.post_path(@conn, :delete, post), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+</section>
+<div class="card-header flex">
+  <h1 class="mb-0 flex-1">Criando Relatório</h1>
+  <span class="text-sm"><%= link "Novo Relatório", to: Routes.post_path(@conn, :new), class: "text-white hover:text-gray-200" %></span>
+</div> 
+
+<h3 class="ui horizontal divider header">
+<i class="user icon"></i>
+Cadastro no PEA PESCARTE
+</h3>
+
+<div class="ui labeled input">
+    <div class="ui label">Eu sou</div>
+    <select class="ui selection dropdown">
+      <option>IC</option>
+      <option>Pós Graduação</option>
+      <option>Professor</option>
+      <option>Pescador</option>
+    </select>
+</div>
