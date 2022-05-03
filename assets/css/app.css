@@ -1,5 +1,6 @@
 /* This file is for your main application CSS */
 @import "./phoenix.css";
+@import "./layout.css";
 
 :root {
   font-size: 62.5%;
@@ -18,10 +19,14 @@
 body {
   font: 400 1.125rem 'Open Sans', sans-serif;
   background: var(--blue-lighter);
-  background-image: url('data:/images/logoPescarte.png');
+/*  background-image: url('data:/images/logopescarte.png');*/
   -webkit-font-smoothing: antialiased;
+  padding-top: 6rem;
+  background-color: var(--blue-lighter); /* #bce8f1;*/
+  background-position:center;
+  margin: 0 auto;
+  background-size: contain;
 }
-
 
 /* Alerts and form errors used by phx.new */
 .alert {
@@ -121,7 +126,18 @@ body {
 /*  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 8" width="30"><path fill="%230069d9" d="M0,0l6,8l6-8"/></svg>');
  
 */
-body{
-  padding-top: 6rem;
-  background-color: #bce8f1;
+/*body, html {
+  height: 100%;
+}
+/* um layout muito interessante que gostei: */
+.parallax {
+  /* The image used */
+ /* background-image: url("priv/static/images/Pescador1.png");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

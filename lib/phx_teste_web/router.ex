@@ -25,6 +25,8 @@ defmodule PhxTesteWeb.Router do
     get "/contato", ContatoController, :mostrar
 
     live "/perfil", Perfil
+    get "/projeto", ProjetoController, :mostrar
+    get "/cooperativa", CooperativaController, :index
 
   #  live "/principal", PrincipalController
 

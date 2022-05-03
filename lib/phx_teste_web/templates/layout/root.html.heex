@@ -30,70 +30,149 @@
   </head>
 
 <body>
-  <header>
 
-  <section class="nav-container">
-    <h1 class="ui avatar rigth spaced image">
-      <a href= "/">
+  <!--Start: Nav  -->
+<div class="ui fixed borderless huge menu">
+  <div class="ui container grid">
+    
+    <!--Start: Desktop Nav-->
+    <div class="computer only row">
+      <a class="header item" href= "/">
+      <img src={Routes.static_path(@conn, "/images/logopescarte.png")} alt="Pescarte Logo" />
+      </a>
+      <a class="active item" href="/">Home</a>
+      <a class="item" href="/projeto">Projeto</a>
+      <a class="item" href="/demo">Censo</a>
+      <a class="item" href="/botao">Botão</a>
+      <a class="item" href="/contato">Contato</a>
+      <div class="dropdown-linha">
+        <a class="ui dropdown item">Linhas Pesquisa<i class="dropdown icon"></i></a>  
+        <div class="dropdown-linha-content">
+          <a href="#linha1">Plataforma Digital</a>
+          <a href="#linha2">Linha 1</a>
+          <a href="#linha3">Linha 2</a>
+        </div>  
+      </div>
+      
+      <div class="dropdown-linha">  
+        <a class="ui dropdown item">Galeria<i class="dropdown icon"></i></a>
+        <div class="dropdown-linha-content">
+          <a href="#photo1">Fotos</a>
+          <a href="#photo2">Vídeos</a>
+          <a href="#photo3">Podcast</a>
+        </div> 
+      </div>
+
+      <div class="dropdown-linha"> 
+        <a class="ui right dropdown item">Setores<i class="dropdown icon"></i></a> 
+            <div class="dropdown-linha-content">
+              <a href="/campo">Campo</a>
+              <a href="/perfil">Perfil Pesquisa</a>
+              <a href="/pesquisa">Pesquisa</a>
+              <a href="/pedagog">Pegagógico</a>
+            </div>
+      </div>      
+        
+      <div class="dropdown-linha"> 
+        <a class="ui dropdown item">Outras Opções<i class="dropdown icon"></i></a>
+        <div class="dropdown-linha-content">
+          <a href="/agenda">Agenda Socio Ambiental</a>
+          <a href="/pgtrs">PGTRS</a>
+          <a href="/museu">Museu da Pesca</a>
+        </div>
+      </div>
+
+      <div class="right menu">
+        <a class="item">Acessar / Login</a>
+      </div>
+    </div>
+    <!--End: Desktop Nav-->
+    
+    <!--Start: Mobile Nav-->
+    <div class="tablet mobile only row">
+      <a class="header item" href= "/">
       <img src={Routes.static_path(@conn, "/images/logopescarte.png")} alt="Pescarte Logo"/>
       </a>
-    </h1>
-    <div class="ui horizontal list left">
-    <div class="item">
-      <a class="nav-link" href="/"> 
-        <button class="usa-menu-btn"> Home </button>
-      </a>
+      <div class="right menu">
+        <a class="menu item">
+          <div class="ui basic icon toggle button">
+            <i class="content icon"></i>
+            Funcionalidades
+          </div>
+          <div class="item">Linha de Pesquisa 1 </div>
+          <div class="item">Linha de Pesquisa 2 </div>
+          <div class="item">Linha de Pesquisa 3 </div>
+        </a>
+      </div>
+      <div class="ui vertical accordion borderless fluid menu">
+        <!-- Start: Search -->
+        <div class="item">
+          <div class="ui icon input">
+            <input type="text" placeholder="Search...">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+         <!-- End: Search -->
+        <a class="active item" href="/">Home</a>
+        <a class="item" href="/projeto">Projeto</a>
+        <a class="item" href="/demo">Censo</a>
+        <a class="item" href="/botao">Botão</a>
+        
+        <div class="item">
+          <div class="title">
+            Dropdown<i class="dropdown icon"></i>
+          </div>
+          <div class="content">
+            <div class="item">
+              Action
+            </div>
+            <div class="item active">
+              Another action
+            </div>
+            <div class="item">
+              Something else here
+            </div>
+            <div class="ui divider"></div>
+            <div class="header item">
+              Navbar header
+            </div>
+            <div class="item">
+              Seperated link
+            </div>
+            <div class="item">
+              One more seperated link
+            </div>
+          </div>
+        </div>
+        <div class="ui divider"></div>
+        <a class="item" href="#">Default</a>
+        <a class="item" href="#">Static top</a>
+        <a class="active item" href="#">Fixed top</a>
+      </div>
     </div>
-    <div class="item">
-      <a class="nav-link" href="/projeto"> 
-        <button class="usa-menu-btn"> PESCARTE </button>
-      </a>
-    </div>
-    <div class="item">
-      <a class="navbar-brand" href="/demo"> 
-        <button class="usa-menu-btn"> Equipe </button>
-      </a>
-    </div>
-    <div class="item">
-      <a class="nav-link" href="/posts">
-      <button class="usa-menu-btn">  Relatórios </button>   
-    </a>
-    </div>
-
-    <div class="item">
-      <a class="nav-link" href="/botao">
-      <button class="usa-menu-btn"> Botão  </button>  
-    </a>
-    </div>
-
-    <div class="item">
-      <a class="nav-link" href="/demo">
-      <button class="usa-menu-btn"> Inc - Reset  </button>
-    </a>
-    </div>
-
-    <div class="item">
-      <a class="nav-link" href="/censo">
-      <button class="usa-menu-btn"> CENSO  </button>
-    </a>
-    </div>
-
-    <div class= "item rigth">
-      <a class="nav-link" href="/login"> 
-      <button class="usa-menu-btn"> Acessar  </button>
-    </a>
-    </div> 
+    <!--End: Mobile Nav-->
   </div>
-    </section>
-      
-  </header>
+</div>
+<!--End: Nav  -->
 
-<%= @inner_content %>
+<!-- PRECISO TRAXER PARA AQUI ALGUMAS IMAGENS ROLANDO!!!!-->
+<!--<img href="/cooperativa" src={Routes.static_path(@conn, "/images/Pescador1.png")}> -->
 
+<!-- Body section -->
+    <div class = "body_sec">
+        <section id="Content">   
+            
+        </section>
+    </div>
+ 
+ <%= @inner_content %>
+
+<!-- Footer Section Ok em 1/5/2022-->
   <footer class="footer">
-  <div class="phx-logo">
-    <img href="/" src={Routes.static_path(@conn, "/images/Logo-Pescarte.png")} alt="Footer">
-  </div>
+    <div class="phx-logo">
+     <img href="/" src={Routes.static_path(@conn, "/images/Logo-Pescarte.png")} alt="Footer">
+    </div>
   </footer>
+
 </body>
 </html>

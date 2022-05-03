@@ -19,74 +19,51 @@ defmodule PhxTesteWeb.Components.Hero do
     ~F"""
     <section class={"phx-hero", "alert-#{@color}": @color}>
       <h1> Membros da Linha 18 </h1>
-<div class="ui horizontal list">
-  <div class="item">
-    <img class="ui mini circular image" src="/assets/images/pescartelogo.png">
-    <div class="content">
-      <div class="ui sub header">Geraldo Timoteo</div>
-      Coordenador Geral
-    </div>
-  </div>
-  <div class="item">
-    <img class="ui mini circular image" src="/images/avatar2/small/elyse.png">
-    <div class="content">
-      <div class="ui header">Zoey Pessanha</div>
-      Desenvolvedor
-    </div>
-  </div>
-  <div class="item">
-    <h2 class="ui header">
-      <img class="ui medium circular image" src="/images/avatar/flor1.jpg">
-    </h2>
-    <div class="content">
-      <div class="ui header">Sahudy Montenegro</div>
-      Desenvolvedor
-    </div>
-  </div>
-  <div class="item">
-    <h2 class="ui header">
-      <img src="/images/avatar/Anna-Perfil.png" class="ui circular image center">
-    </h2>
-    <div class="content">
-      <div class="ui header">
-       <a href="http://lattes.cnpq.br/7484786835288826">Annabell Tamariz</a>
+
+    <div class="ui horizontal list">
+      <div class="item">
+        <img class="ui mini circular image" src="/assets/images/pescartelogo.png">
+        <div class="content">
+          <div class="ui header">Geraldo Timoteo</div>
+          Coordenador Geral
+        </div>
       </div>
-      Desenvolvedor
+
+      <div class="item">
+        <img class="ui mini circular image" src="/images/avatar2/small/elyse.png">
+        <div class="content">
+          <div class="ui header">Zoey Pessanha</div>
+          Desenvolvedor
+        </div>
+      </div>
+
+      <div class="item">
+        <h2 class="ui header">
+          <img class="ui medium circular image" src="/images/avatar/flor1.jpg">
+        </h2>
+        <div class="content">
+          <div class="ui header">Sahudy Montenegro</div>
+          Desenvolvedor
+        </div>
+      </div>
+
+      <div class="item">
+        <h2 class="ui header">
+          <img src="/images/avatar/Anna-Perfil.png" class="ui circular image center">
+        </h2>
+        <div class="content">
+          <div class="ui header">
+           <a href="http://lattes.cnpq.br/7484786835288826">Annabell Tamariz</a>
+          </div>
+          Desenvolvedor
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
 <h2 class="ui header">
       <img class="ui large circular image" src="/images/avatar/Anna-Perfil.png">
     </h2>
 </section>
-
-<section class={"phx-hero", "alert-#{@color}": @color}>
-<h2 > Vamos criar o perfil do pesquisador </h2>
-
-<div class="ui form">
-  <div class="field">
-    <label>Bibliografia</label>
-    <textarea></textarea>
-  </div>
-  <div class="field">
-    <label>Breve Bibliografia</label>
-    <textarea rows="2"></textarea>
-  </div>
-  <div class="field">
-    <label>link do lattes</label>
-    <input type="text" placeholder="Enter lattes">
-  </div>
-  <div class="field">
-    <label>E-mail</label>
-    <input type="email" placeholder="pescarte@uenf.br">
-  </div>
-</div>
-</section>
-
-
-
-
     """
   end
 end

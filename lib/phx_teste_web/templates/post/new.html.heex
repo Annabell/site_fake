@@ -1,5 +1,8 @@
-<h1>Novo Relatório</h1>
+<div class="card mb-20">
+  <div class="card-header flex">
+    <h1 class="mb-0 flex-1">Novo Relatório</h1>
 
-<%= render "form.html", Map.put(assigns, :action, Routes.post_path(@conn, :create)) %>
-
-<span><%= link "Voltar", to: Routes.post_path(@conn, :index) %></span>
+    <%= render "form.html", Map.put(assigns, :action, Routes.post_path(@conn, :create)) %>
+  </div>
+   <span><%= link "Voltar", to: Routes.post_path(@conn, :index) %></span>
+</div>

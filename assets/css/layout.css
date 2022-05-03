@@ -1,0 +1,105 @@
+/* criando um header com 4 seções: header, navegação, conteúdo e footer*/
+.head1 {
+  font-size:40px;
+  color:#009900;
+  font-weight:bold;
+}
+.head2 {
+  font-size:17px;
+  margin-left:10px;
+  margin-bottom:15px;
+}
+/*.menu {  
+  position: sticky;
+  top: 0;
+  background-color: #009900;
+  padding:10px 0px 10px 0px;
+  color:rgb(213, 26, 26);
+  margin: 0 auto;
+  overflow: hidden;
+}
+.menu a {
+  float: left;
+  color: rgb(213, 26, 26);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.menu-log {
+  right: auto;
+  float: right;
+}
+/* ok, vou deixar com esta definição 1/5/2022 */
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 229, 255, 0.013);/* #000; */
+  position: fixed; /* absolute; */
+  padding-bottom: 25em 0em;
+   margin: 25em 0em 0em;
+/*  padding-top:10px;
+   padding-bottom: 10px; aumenta a distancia do fundo da tela */
+  text-align:center;
+  font-size:30px;
+  font-weight:bold;
+}
+
+.body_sec {
+  margin-left:20px;
+}
+
+/* vou tentar criar uma div com fotos para que aparezca na landing page */
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 50px;
+  padding: 30px;
+}
+.photo {
+  max-width: 31.333%;
+  padding: 0 10px;
+  height: 240px;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #277DA1;
+  color: white;
+  padding: 26px;
+  font-size: 16px;
+  border: none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown-linha {
+  position: relative;
+  display: block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-linha-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(159, 107, 107, 0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-linha-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-linha-content a:hover {background-color: #BCE0EF;}
+
+/* Show the dropdown menu on hover */
+.dropdown-linha:hover .dropdown-linha-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-linha:hover .dropbtn {background-color: #F8961E;}
