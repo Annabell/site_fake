@@ -1,0 +1,4 @@
+<section class="phx-hero">
+    <h1>RELATÓRIO MENSAL DO PESQUISADOR</h1>
+    <RelatoMensal name="Junho" color="info"/>
+</section>

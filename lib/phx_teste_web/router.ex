@@ -24,13 +24,13 @@ defmodule PhxTesteWeb.Router do
     live "/botao", Botoes
     get "/contato", ContatoController, :mostrar
 
-    live "/perfil", Perfil
+    live "/profile", Profile
+    live "/relatorio", Relatorio
+#    get "/profile", ProfileController, :profile    dá erro!!!!
     get "/projeto", ProjetoController, :mostrar
     get "/cooperativa", CooperativaController, :index
 
   #  live "/principal", PrincipalController
-
-    resources "/posts", PostController # cria todas as opções: index, new, create...
 
   end
 

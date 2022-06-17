@@ -1,0 +1,4 @@
+<section class="phx-hero">
+    <h1>PERFIL DO PESQUISADOR</h1>
+    <PerfilPesq color="info"/>
+</section>

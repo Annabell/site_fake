@@ -503,10 +503,10 @@ li, li a {
 *{margin:0;padding:0;}
 a {color:inherit;text-decoration:none;}
 
-wrap{
+#wrap{
   position:absolute;
   left:0; top:0;
-  width:150%;
+  width:100%;
   height:100%;
   display:flex;
   align-items:stretch;
@@ -566,21 +566,6 @@ h1 {
   opacity:.5;
 }
 .hb:hover + .fullBg {opacity:1;transform:scale(1.02);}
-.credits {
-  position:fixed;
-  bottom:0;right:0;
-  padding:1.5em;
-  font-size:.8em;
-  text-align:right;
-  font-style:italic;
-  opacity:.8;
-  transition:opacity .2;
-  z-index:3;
-}
-.credits:hover {
-  text-decoration:underline;
-  opacity:1;
-}
 /* trouxendo ideias para responsividade:*/
 /* This is important when making a site usable on small devices. */
 .max-width {
@@ -654,32 +639,27 @@ h1 {
             -ms-transform: scale(1);
             z-index: 3;
         }
-    }
+      }
 
     .owl-item{
         &.medium{
             transform: scale(0.8);
             -ms-transform: scale(0.8);
             z-index: 2;
-
             &.mdright{
                 /*border: solid 1px red;*/
 /*                position: relative;
                 left: -30px;
-                @media (min-width: 768px){
-                    left: 0px;
-                }
+                @media (min-width: 768px){ left: 0px; }
             } */
-            &.mdleft{
+/*            &.mdleft{
                 /*border: solid 1px blue;*/
-                position: relative;
+/*                position: relative;
                 right: -30px;
-                @media (min-width: 768px){
-                    right: 0px;
-                }
-            }
-/*        } */
-    }
+                @media (min-width: 768px){ right: 0px; }
+              }
+/*        } 
+    }*/
 
 /*    .owl-item{
         &.smallRight{

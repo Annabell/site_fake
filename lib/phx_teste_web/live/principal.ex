@@ -11,14 +11,14 @@ defmodule PhxTesteWeb.Principal do
       rede social regional integrada por pescadores artesanais e por seus familiares,
       buscando, por meio de processos educativos, promover, fortalecer e
       aperfeiçoar a sua organização.
-      
+
       This is the same Card component but now we're using
       <strong>typed slotables</strong> instead of <strong>templates</strong>.
 
-      <Footer>
+      <footer>
         <a href="https://www.facebook.com/peapescarte/" class="card-facebook">Facebook</a>
         <a href="#" class="card-instagram">Instagram</a>
-      </Footer>
+      </footer>
     </Card>
     """
   end

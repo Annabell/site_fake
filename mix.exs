@@ -34,16 +34,16 @@ defmodule PhxTeste.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:surface, "~> 0.6.0"},
+      {:surface, "~> 0.7.0"},
       {:phoenix, "~> 1.6.0"},
       {:phoenix_ecto, "~> 4.4"},
       {:ecto_sql, "~> 3.6"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 3.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.16.0"},
+      {:phoenix_live_view, "~> 0.17.4"},
       {:floki, ">= 0.30.0", only: :test},
-      {:phoenix_live_dashboard, "~> 0.5"},
+      {:phoenix_live_dashboard, "~> 0.6.5"},
       {:esbuild, "~> 0.2", runtime: Mix.env() == :dev},
       {:swoosh, "~> 1.3"},
       {:telemetry_metrics, "~> 0.6"},
@@ -51,8 +51,8 @@ defmodule PhxTeste.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:surface_formatter, "~> 0.6.0"},
-      {:surface_catalogue, "~> 0.2.0"}
+      {:surface_formatter, "~> 0.7.0"},
+      {:surface_catalogue, "~> 0.4.0"}
     ]
   end
 

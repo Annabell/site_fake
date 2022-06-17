@@ -1,6 +1,7 @@
 /* This file is for your main application CSS */
 @import "./phoenix.css";
 @import "./layout.css";
+@import "./progressbar.css";
 
 :root {
   font-size: 62.5%;
