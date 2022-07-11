@@ -12,10 +12,10 @@ defmodule PhxTesteWeb.Images do
     "https://raw.githubusercontent.com/cciuenf/maroon/88f7dfdb0f28850523b848500d74edcd0a6b10ff/public/assets/icons/cadeado.svg"
   end
   def buttonClass do
-    "flex items-center bg-white rounded-full py-3 px-6 w-80 justify-center"
+    "bot-editar"
   end
   def buttonTextClass do
-    "text-blue-700 uppercase font-black"
+    "bot-textedit"
   end
   def buttonCircular do
     "ui large circular image"

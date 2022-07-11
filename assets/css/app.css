@@ -2,6 +2,7 @@
 @import "./phoenix.css";
 @import "./layout.css";
 @import "./progressbar.css";
+@import "./profile.css";
 
 :root {
   font-size: 62.5%;

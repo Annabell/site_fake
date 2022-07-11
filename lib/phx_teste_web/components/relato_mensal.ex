@@ -16,7 +16,22 @@ def render(assigns) do
 ~F"""
 <section class={"phx-hero", "alert-#{@color}": @color}>
 <h2 > RELATÓRIO MENSAL {@name} </h2>
-<!--   -->
+<!-- Tentando retomar os botões que tinha feito 11/7/2022-->
+<div class="row-perfil">
+    <div class="four column">
+       <span> <img class="img" src={PhxTesteWeb.Images.perfil} /> </span>
+       <div class="user"> Nome do Usuário</div>
+       <div class="tipoparti">Tipo de Participação</div>
+
+       <button class={PhxTesteWeb.Images.buttonClass}>
+         <img src={PhxTesteWeb.Images.editarPerfil} width="19" height="25"/>
+         <span class={PhxTesteWeb.Images.buttonTextClass}> Editar Perfil </span>
+       </button>
+    </div>
+</div>
+
+
+<!-- ok a apresentação  -->
   <form class="ui form">
   <ul id="progressbar">
       <li class="active">Dados Pessoais</li>

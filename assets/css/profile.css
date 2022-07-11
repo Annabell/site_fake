@@ -1,0 +1,99 @@
+
+.btn {
+  @apply rounded-full;
+}
+.span.img{
+  top: 210px;
+  left: 404px;
+  width: 123px;
+  height: 123px;
+  opacity: 1
+}
+
+.user{
+  top: 388px;
+  left: 369px;
+  width: 194px;
+  height: 27px;
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  font: normal normal bold 20px/27px Open Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.tipoparti{
+  top: 425px;
+  left: 359px;
+  width: 218px;
+  height: 27px;
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  font: normal normal normal 20px/27px Open Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+/* botoes do perfil: */
+.bot-editar{
+  top: 512px;
+  left: 250px;
+  width: 145px;
+  height: 58px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  border-radius: 49px;
+  opacity: 1;
+}
+.bot-textedit{
+  top: 528px;
+  left: 422px;
+  width: 142px;
+  height: 27px;
+  text-align: left;
+  font: normal normal bold 10px/17px Open Sans;
+  letter-spacing: 0px;
+  color: #0E4771;
+  opacity: 1;
+}
+.row-perfil{
+  display: flex;
+  top: 120px;
+  left: 0.5px;
+  width: 1920px;
+  height: 750px;
+  opacity: 1;
+}
+.perfil-container{
+  display: flex;
+  /* width: 703px; */
+  max-width: 1919.5px
+  height: 749.61px;
+  grid-template-columns: 200px 400px
+  background: var(--blue-dark);
+}
+.max-width {
+  max-width: 749.61px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #73AD21;
+}
+.caixa-perfil{ /* Layout Properties */
+top: 120px;
+left: 0.5px;
+width: 1920px;
+height: 750px;
+opacity: 1; /* UI Properties */
+}
+.text-biog{  /* Layout Properties */
+top: 262px;
+left: 704px;
+width: 866px;
+height: 400px;
+/* UI Properties */
+color: var(--unnamed-color-ffffff);
+text-align: left;
+font: normal normal normal 22px/37px Open Sans;
+letter-spacing: 0px;
+color: var(--blue-dark);
+opacity: 1;
+}
